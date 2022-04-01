@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="./CSS/style.css">
+
+<body>
+    <div class="nav">
+        <div>
+
+            <div class="range-slider">
+                <input id="arrsize" class="range" type="range" step="10" value="50" min="10" max="100">
+            </div>
+            <div class="label"> Change Array Size </div>
+        </div>
+
+        <div>
+            <div class="custome-dropdown" style="width: 200px;">
+                <button class="custome-dropdown-btn btn" style="text-align:left;"><span id="changealgobtntxt">Bubble
+                        Sort</span>
+
+                    <svg style="float: right;margin-top: 7px;" width="17" height="11" viewBox="0 0 17 11" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 10.0116C7 2.41158 8.5 0.844913 8.5 1.01158L16 10.0116" stroke="#212529"
+                            stroke-width="2" />
+                    </svg>
+
+                </button>
+                <div class="menu">
+                    <li data-value="1">Bubble Sort</li>
+                    <li data-value="2">Merge Sort</li>
+                    <li data-value="3">Selection Sort</li>
+                    <li data-value="4">Insertion Sort</li>
+                </div>
+            </div>
+            <div class="label"> Select Sorting Algorithm </div>
+        </div>
+        <button id="startsorting" class="btn" onclick="startSorting()"
+            style="width: 165px;font-size: 23px;height: 85px;"> Start
+            Sorting </button>
+        <div>
+            <button id="generatenewarray" class="btn" onclick="generate_array()" style=" width: 200px;">
+                Generate New Array</button>
+            <div class="label"> Change Array</div>
+
+        </div>
+        <div>
+
+            <div class="range-slider">
+                <input id="time" class="range range2" type="range" step="100" value="50" min="10" max="510">
+            </div>
+            <div class="label"> Change Speed </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="mainClass"></div>
+    </div>
+</body>
+<script src="./Scripts/merge.js"></script>
+<script src="./Scripts/bubblesort.js"></script>
+<script src="./Scripts/selectionsort.js"></script>
+<script src="./Scripts/insertionsort.js"></script>
+<script src="./Scripts/jqurey.js"></script>
+<script src="./Scripts/main.js"></script>
+
+
+<script src="./Scripts/custome-dropdown.js"></script>
+<script src="./Scripts/rangeslider.js"></script>
+
+</html>
