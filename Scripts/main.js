@@ -1,4 +1,4 @@
-var array_size = 100;
+var array_size = 90;
 var arr = [];
 var speed = 1000;
 var delay_time = 10;
